@@ -23,14 +23,19 @@
 
 ### 주요 기능 소개
 
-- 룸메이트 매칭 기능
+1. 룸메이트 매칭 기능
+<img src = "https://user-images.githubusercontent.com/127607722/234486774-047f3c29-0a40-4f95-852f-548a01ac6b70.png" width = "150" height = "150">
   - mbti 검사와 같은 오픈소스 이용
   - html, css
   
-- 세탁물 예약 시스템 
+2. 세탁물 예약 시스템 
+<p align="center"><img src="https://user-images.githubusercontent.com/127607722/234485883-6e087730-598d-40a6-8976-a89d88c579c6.png" width = "150" height = "150"></p>
 
-  - 어떻게 구상할지 더 고민하고, 플로우 차트도 짜봐야 함
-- 자유게시판
+- 어떻게 구상할지 더 고민하고, 플로우 차트도 짜봐야 함
+
+3. 자유게시판
+
+
 
 
 
