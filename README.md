@@ -1,4 +1,4 @@
-# 고급모바일실험 _  팀프로젝트
+# Advanced_Mobile LAB
 > 단국대 기숙사 전용 웹페이지 제작
 
 <p align="center"><img src="https://user-images.githubusercontent.com/127607722/234476032-9ccbeb74-ffea-44a8-844d-8b43ae21e4cb.png"></p>
@@ -23,17 +23,23 @@
 
 ### 주요 기능 소개
 
-1. 룸메이트 매칭 기능
-<img src = "https://user-images.githubusercontent.com/127607722/234486774-047f3c29-0a40-4f95-852f-548a01ac6b70.png" width = "150" height = "150">
+**1. 룸메이트 매칭 기능**
+
+<img src="https://user-images.githubusercontent.com/127607722/234486774-047f3c29-0a40-4f95-852f-548a01ac6b70.png" width = "150" height = "150"></p>
   - mbti 검사와 같은 오픈소스 이용
   - html, css
   
-2. 세탁물 예약 시스템 
-<p align="center"><img src="https://user-images.githubusercontent.com/127607722/234485883-6e087730-598d-40a6-8976-a89d88c579c6.png" width = "150" height = "150"></p>
+  
+**2. 세탁물 예약 시스템**
 
+<img src="https://user-images.githubusercontent.com/127607722/234485883-6e087730-598d-40a6-8976-a89d88c579c6.png" width = "150" height = "150"></p>
 - 어떻게 구상할지 더 고민하고, 플로우 차트도 짜봐야 함
 
-3. 자유게시판
+
+**3. 자유게시판**
+
+<img src = "https://user-images.githubusercontent.com/127607722/234488832-ce7b0053-7330-42a3-b9cf-dc43f3d79268.png" width = 150 height = "150">
+
 
 
 
