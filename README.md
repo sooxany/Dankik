@@ -1,5 +1,5 @@
-# 'DANKIK'
-## 단국대 기숙사 전용 웹페이지
+# DANKIK
+> 단국대 기숙사 전용 웹페이지 제작
 
 <p align="center"><img src="https://user-images.githubusercontent.com/127607722/234476032-9ccbeb74-ffea-44a8-844d-8b43ae21e4cb.png"></p>
 
