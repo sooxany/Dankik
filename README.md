@@ -1,5 +1,10 @@
-# TEAM PROJECT
-## 단국대 기숙사 전용 웹페이지 만들기
+# 'DANKIK'
+## 단국대 기숙사 전용 웹페이지
+
+<p align="center"><img src="https://user-images.githubusercontent.com/127607722/234476032-9ccbeb74-ffea-44a8-844d-8b43ae21e4cb.png"></p>
+
+
+
 ### 소개
 - 모바일공학과 전공 수업
 - 고모실 팀 프로젝트
