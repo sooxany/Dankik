@@ -1,20 +1,28 @@
-# DANKIK
+# 고급모바일실험 _  팀프로젝트
 > 단국대 기숙사 전용 웹페이지 제작
 
 <p align="center"><img src="https://user-images.githubusercontent.com/127607722/234476032-9ccbeb74-ffea-44a8-844d-8b43ae21e4cb.png"></p>
 
 
 
-### 소개
-- 모바일공학과 전공 수업
-- 고모실 팀 프로젝트
+## TEAM 'DANKIK'
+- 단국대학교 모바일시스템공학과 전공
+- 고급 모바일 실험 TEAM PROJECT
 - 개발 기간 : 2022.03 ~ 2022.06 
-- 팀원 : 김지용, 나윤진, 전혜림, 김수진
 
-### 개요
-> 단국대 기숙사들을 위한 전용 웹페이지가 없다는 불편함을 해소하고자 개발하기로 함
+## 웹 개발팀 소개
+이름 | GITHUB | ROLE
+---|---|---|
+김수진 | @sooxany | Backend
+김지용 | @kwwj100 | Frontend
+나윤진 | @imyxxnjin | Frontend
+전혜림 | @jeonhyelim | Backend
 
-### 주요기능 
+
+### 개발 계기
+* 단국대 기숙사들을 위한 전용 웹페이지가 없다는 불편함을 해소하고자 개발하기로 함
+
+### 주요 기능 소개
 
 - 룸메이트 매칭 기능
   - mbti 검사와 같은 오픈소스 이용
