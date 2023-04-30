@@ -8,7 +8,7 @@ public class AmlApplication {
  
 	public static void main(String[] args) {
 		SpringApplication.run(AmlApplication.class, args);
-		System.out.print("hello world");
+		System.out.print("hello");
 	}
 
 }
