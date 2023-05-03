@@ -28,13 +28,13 @@
 
 <img src="https://user-images.githubusercontent.com/127607722/234486774-047f3c29-0a40-4f95-852f-548a01ac6b70.png" width = "150" height = "150"></p>
   - mbti 검사와 같은 오픈소스 이용
-  - html, css
+  - 구현 : html, css 이용
   
   
 **2. 세탁물 예약 시스템**
 
 <img src="https://user-images.githubusercontent.com/127607722/234485883-6e087730-598d-40a6-8976-a89d88c579c6.png" width = "150" height = "150"></p>
-- 어떻게 구상할지 더 고민하고, 플로우 차트도 짜봐야 함
+- 네이버 예약 시스템처럼 구현
 
 
 **3. 자유게시판**
