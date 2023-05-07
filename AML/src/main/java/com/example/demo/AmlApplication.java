@@ -1,14 +1,25 @@
 package com.example.demo;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import java.sql.*;
 
-@SpringBootApplication
-public class AmlApplication {
+public class AmlApplication{
+    public static void main(String args[]){
+        Connection con = null;
  
-	public static void main(String[] args) {
-		SpringApplication.run(AmlApplication.class, args);
-		System.out.print("hello1");
-	}
-
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con=DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/mydb?serverTimezone=UTC", // DB URL
+                    "USER_NAME", "비밀번호");  // USER_NAME과 PASSWORD
+            System.out.println("Success");
+        }
+        catch(SQLException ex){ 
+            System.out.println("SQLException" + ex);
+            ex.printStackTrace();
+        }
+        catch(Exception ex){ 
+            System.out.println("Exception:" + ex);
+            ex.printStackTrace();
+        }
+    }
 }
