@@ -9,7 +9,7 @@
 </head>
 <body>
 	<script> //로그인 페이지로 바로 가기
-	location.href = 'login.jsp'
+	location.href = 'main.jsp'
 	</script>
 
 </body>
