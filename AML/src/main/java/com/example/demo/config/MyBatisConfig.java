@@ -14,7 +14,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 public class MyBatisConfig {
 	@Bean
 	public SqlSessionFactory sqlSessionFactory(DataSource datasource) throws Exception{
-	 SqlSessionFactoryBean sqlSessionFactory=new SqlSessionFactoryBean();
+	 SqlSessionFactoryBean sqlSessionFactory = new SqlSessionFactoryBean();
 	 sqlSessionFactory.setDataSource(datasource);
 	 sqlSessionFactory.setTypeAliasesPackage("com.example.demo.dto");
 	 return sqlSessionFactory.getObject();

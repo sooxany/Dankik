@@ -4,17 +4,21 @@ public class UserDto {
 	private String userID;
 	private String userPassword;
 	
-	public String getID() {
+	public String getUserID() {
 		return userID;
 	}
-	public void setID(String userID) {
+	public void setUserID(String userID) {
 		this.userID = userID;
 	}
-	public String getPassword() {
+	public String getUserPassword() {
 		return userPassword;
 	}
-	public void setPassword(String userPassword) {
+	public void setUserPassword(String userPassword) {
 		this.userPassword = userPassword;
+	}
+	
+	public String toString() {
+		return "UserDto [userId=" + userID + ",UserPw="+userPassword+"]";
 	}
 
 }

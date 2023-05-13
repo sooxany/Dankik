@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper
-    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-    
-<mapper namespace="dao.UserMapper">
-    <insert id="insertUser" parameterType="userDto">
-        INSERT INTO user VALUES (#{userId}, #{userPw}, #{userName}, #{userGender}, #{userEmail})
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+						"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.UserMapper">
+
+	<insert id="insertUser" parameterType="userDto">
+        INSERT INTO user VALUES (#{userID}, #{userPassword})
     </insert>
     
     <update id="updateUser" parameterType="userDto">
         UPDATE user 
-        SET userPw = #{userPw}, userName = #{userName}, userGender = #{userGender}, userEmail = #{userEmail} 
-        WHERE userId = #{userId}
+        SET userPassword = #{userPassword} 
+        WHERE userID = #{userID}
     </update>
     
     <delete id="deleteUser" parameterType="string">
-        DELETE FROM user WHERE userId = #{userId}
+        DELETE FROM user WHERE userID = #{userID}
     </delete>
     
     <select id="selectOneUser" parameterType="string" resultType="userDto">
-        SELECT * FROM user WHERE userId = #{userId}
+        SELECT * FROM user WHERE userID = #{userID}
     </select>
     
-    <select id="selectAllUser" resultType="userDto">
-        SELECT * FROM user
-    </select>
+	<select id="selectAllUser" resultType="userDto">
+		SELECT * FROM user;
+	</select>
+
 </mapper>

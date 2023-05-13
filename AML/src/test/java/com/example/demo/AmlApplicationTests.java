@@ -3,6 +3,7 @@ package com.example.demo;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -20,9 +21,8 @@ public class AmlApplicationTests {
     public void userTest() 
     {
         UserDto user = new UserDto();
-        user.setID("test");
-        user.setPassword("test");
-        
+        user.setUserID("test");
+        user.setUserPassword("test");
         uMapper.insertUser(user);
         
         System.out.println(uMapper.selectOneUser("test"));
