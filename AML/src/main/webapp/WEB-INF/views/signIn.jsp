@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="EUC-KR">
+    <title>SignIn</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signIn.css">
+    <script src="login.js" defer></script>
+  </head>
+
+  <body>
+    <div class="window">
+    <div class="logo-container">
+      <img src="dankik_logo.jpg" alt="로고 이미지">
+    </div>
+    
+    <div class="form-wrapper">
+	    <div class="form signIn">
+        <div class="form-header">
+          <div class="show-signin">Sign In</div>
+        </div>
+        <div class="form-elements">
+          <div class="form-arrow">
+            <input type="text" placeholder="ID">
+          </div>
+          <div class="form-arrow">
+            <input type="password" placeholder="Password">
+          </div>
+          <div class="form-arrow">
+            <button id="submit-btn">Sign In</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

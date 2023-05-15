@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.example.demo.dao.UserMapper;
 import com.example.demo.dto.UserDto; 
@@ -19,6 +20,9 @@ public class AmlApplication {
         System.out.println(uMapper.selectOneUser("test"));
     }
 
+    public static void main(String[] args) throws Exception{
+    	SpringApplication.run(AmlApplication.class, args);
+    }
  
     
 }
