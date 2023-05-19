@@ -21,8 +21,8 @@ public class AmlApplicationTests {
     public void userTest() 
     {
         UserDto user = new UserDto();
-        user.setUserID("test");
-        user.setUserPassword("test");
+        user.setUserID("test1");
+        user.setUserPassword("123456");
         uMapper.insertUser(user);
         
         System.out.println(uMapper.selectOneUser("test"));
