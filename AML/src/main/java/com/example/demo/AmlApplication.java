@@ -2,7 +2,6 @@ package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import com.example.demo.dao.UserMapper;
 import com.example.demo.dto.UserDto; 
 
 @SpringBootApplication

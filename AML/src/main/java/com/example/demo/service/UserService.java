@@ -1,14 +1,20 @@
 package com.example.demo.service;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
 import java.util.List;
 import com.example.demo.dto.UserDto;
+import com.example.demo.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
 
-public abstract class UserService {
-	public abstract boolean login (String userID, String userPassword);
-	public abstract boolean join (UserDto user); 
-	public abstract void modify(UserDto user);
-	public abstract void withdraw(String userID);
-	public abstract UserDto getUser(String userID);
-	public abstract List<UserDto> getUserList();
+@Service
+@Controller
+@RequiredArgsConstructor
+public class UserService {
+	private final UserRepository userRepository;
+	
+	public void save(UserDto userDto) {
+	
+	}
 
 }
