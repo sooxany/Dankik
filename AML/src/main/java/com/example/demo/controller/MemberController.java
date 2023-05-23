@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,12 +11,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.example.demo.dto.UserDto;
 import com.example.demo.service.UserService;
 
-@Service
 @Controller
 @RequiredArgsConstructor
 public class MemberController {
 	// 생성자 주입
-	private final UserService userService;
+	private final UserService userService;  
 	
 	//회원가입 페이지 출력 요청
 	@GetMapping("member/save")
@@ -30,10 +30,6 @@ public class MemberController {
 		userService.save(userDto);
 		
 		return "home";
-	}
-
-	public UserService getUserService() {
-		return userService;
 	}
 
 }
