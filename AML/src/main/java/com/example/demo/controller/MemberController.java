@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.example.demo.dto.UserDto;
 import com.example.demo.service.UserService;
 
+import jakarta.servlet.http.HttpSession;
+
 @Controller
 @RequiredArgsConstructor
 public class MemberController {
@@ -29,7 +31,26 @@ public class MemberController {
 		System.out.println("userDto = " + userDto);
 		userService.save(userDto);
 		
-		return "home";
+		return "login";
+	}
+	
+	@GetMapping("/member/login")
+	public String loginForm() {
+		return "login";
+	}
+	
+	@PostMapping("/member/login")
+	public String login(@ModelAttribute UserDto userDto, HttpSession session) {
+		UserDto loginResult = userService.login(userDto);
+		if (loginResult != null) {
+			// login 성공
+			session.setAttribute("loginID", loginResult.getUserID());
+			return "main";
+			
+		} else {
+			// login 실패
+			return "login";
+		}
 	}
 
 }

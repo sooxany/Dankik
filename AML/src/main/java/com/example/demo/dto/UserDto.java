@@ -1,5 +1,7 @@
 package com.example.demo.dto;
 
+import com.example.demo.entity.UserEntity;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,6 +18,16 @@ public class UserDto {
 	private Long id;
 	private String userID;
 	private String userPassword;
+	
+	public static UserDto toUserDto(UserEntity userEntity) {
+		UserDto userDto = new UserDto();
+		userDto.setId(userEntity.getId());
+		userDto.setUserID(userEntity.getUserID());
+		userDto.setUserPassword(userEntity.getUserPassword());
+		return userDto;
+	}
+	
+	
 //	
 //	public String getUserID() {
 //		return userID;
