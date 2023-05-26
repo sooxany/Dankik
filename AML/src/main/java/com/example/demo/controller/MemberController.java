@@ -45,11 +45,11 @@ public class MemberController {
 		if (loginResult != null) {
 			// login 성공
 			session.setAttribute("loginID", loginResult.getUserID());
-			return "main";
+			return "home";
 			
 		} else {
 			// login 실패
-			return "login";
+			return "로그인 실패하셨습니다";
 		}
 	}
 

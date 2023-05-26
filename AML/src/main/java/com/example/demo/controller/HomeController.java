@@ -10,5 +10,4 @@ public class HomeController {
 	public String home() {
 		return "home"; // index라는 html 파일을 띄우겠다/ templates 폴더의 index.html을 찾아감
 	}	
-
 }
