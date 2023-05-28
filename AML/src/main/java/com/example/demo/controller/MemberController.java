@@ -25,6 +25,12 @@ public class MemberController {
 		return "save";
 	}
 	
+	// 세탁 예약 시스템 페이지 출력 요청
+	@GetMapping("member/reserve")
+	public String reserveForm() {
+		return "reserve";
+	}
+	
 	@PostMapping("/member/save")
 	public String save(@ModelAttribute UserDto userDto) {
 		System.out.println("MemberController.save");
@@ -49,8 +55,10 @@ public class MemberController {
 			
 		} else {
 			// login 실패
-			return "로그인 실패하셨습니다";
+			return "login";
 		}
 	}
+	
+	
 
 }

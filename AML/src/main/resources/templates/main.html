@@ -1,68 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/css/home.css">
-    </head>
-    <body>
-       <div class="wrap">
-            <div class="intro">
-                <div class="menu" >
-                    <nav class="clearfix">
-                      <ul class="clearfix">
-                        <li><a href="#">세탁 예약 시스템</a></li>
-                        <li><p>반갑습니다 <p> th:text="${session.loginID}"></p></p><li>
-                        
-                    </ul>
-                    <a id="pull" href="#"></a>
-                  </nav>
-                </div>
-              
-                <!--<div class="header">
-                    <ul class="nav">
-                        <li><a href="#">세탁 예약 시스템</a></li>
-                        <li><a href="#">회원가입</a></li>
-                        <li><a href="#">로그인</a></li>-->
-                    </ul>
-                </div>
-                <div class="logo">
-                    <img src="/img/logo1.png" width="400px" height="400px" margin="1000px">
-                </div>
-                <div class="intro_text">
-                    <h1>Dankik</h1>
-                    <h4 class="contents1">안녕하세요! 단국대학교 죽전캠퍼스 기숙사생들을 위한 세탁 예약 홈페이지입니다.</h4>
-                </div>
-        </div>   
-            <!--intro end-->
-
-            <ul class="amount">
-                <li><div>
-                    <br>
-                    <br>
-                    <a href="#">집현재</a><br>
-                    <br>
-                    <a href="#"><img src="https://domi.dankook.ac.kr/images/Khostel/templates/B0001/sub/1_0301.gif" width="400px" height="400px" margin="100px"></a><br>
-                </div></li>
-                <li><div>
-                    <br>
-                    <br>
-                    <a href="#">웅비홀</a><br>
-                    <br>
-                    <a href="#"><img src="https://domi.dankook.ac.kr/images/Khostel/templates/B0002/sub/2_0301.gif" width="400px" height="400px" margin="100px"></a><br>
-                </div></li>
-                <li><div>
-                    <br>
-                    <br>
-                    <a href="#">진리관</a><br>
-                    <br>
-                    <a href="#"><img src="https://domi.dankook.ac.kr/images/Khostel/templates/B0006/sub/0103/3_0301.jpg" width="400px" height="400px" margin="100px"></a><br>
-                    <br>
-                </div></li>
-            </ul>
-          
-            <!--amount end-->
-
-
-        </body>
+<head>
+	<meta charset="UTF-8">
+	<title>main</title>
+</head>
+<body>
+	session 값 확인 : <p th:text="${session.userID}"></p>
+	 <a href="/member/logout">로그아웃</a>
+</body>
