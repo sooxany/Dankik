@@ -45,7 +45,7 @@ public class MemberController {
 		if (loginResult != null) {
 			// login 성공
 			session.setAttribute("loginID", loginResult.getUserID());
-			return "home";
+			return "main";
 			
 		} else {
 			// login 실패
