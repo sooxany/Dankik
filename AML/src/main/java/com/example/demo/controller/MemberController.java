@@ -25,6 +25,12 @@ public class MemberController {
 		return "save";
 	}
 	
+	// 로그인 후 메인 페이지 출력 요청
+	@GetMapping("member/main")
+	public String mainForm() {
+		return "main";
+	}
+	
 	// 세탁 예약 시스템 페이지 출력 요청
 	@GetMapping("member/reserve")
 	public String reserveForm() {
@@ -43,6 +49,11 @@ public class MemberController {
 	@GetMapping("/member/login")
 	public String loginForm() {
 		return "login";
+	}
+	
+	@GetMapping("/member/home")
+	public String homeForm() {
+		return "home";
 	}
 	
 	@PostMapping("/member/login")

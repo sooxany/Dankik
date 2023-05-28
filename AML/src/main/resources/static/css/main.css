@@ -17,19 +17,25 @@ nav ul{
     margin: 0 auto;
     width: auto;
 }
-nav li{
+nav ul li {
+	position: relative;
 }
 nav a{
     line-height: 50px;
-  height: 50px;
+    height: 50px;
 }
 nav li a{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
-nav li:last-child a{
+.one {
+	float: right;
+}
+
+nav li:last-child{
     border-right: 0;
+    float: right;
     }
 nav a:hover, nav a:active{
 }
@@ -53,9 +59,6 @@ nav a#pull{
     /*position: relative;*/
     display: inline-block;
   }
-  .one {
-  float: left;
-  }
   .menu a{
     color: #FFFFFF;
     text-align: center;
@@ -77,6 +80,12 @@ nav a#pull{
    background-color: #333333;color: white;
    position: absolute;z-index: 1;
  }
+ 
+ .menu ul li:last-child {
+  margin-left: 0;
+  margin-right: auto;
+  position: relative;
+}
 
 /*.header{
     display: flex;
