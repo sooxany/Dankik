@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
 import com.example.demo.dto.UserDto;
 import com.example.demo.service.UserService;
 
@@ -17,7 +19,7 @@ import jakarta.servlet.http.HttpSession;
 @RequiredArgsConstructor
 public class MemberController {
 	// 생성자 주입
-	private final UserService userService;  
+	private final UserService userService;
 	
 	//회원가입 페이지 출력 요청
 	@GetMapping("member/save")
@@ -42,7 +44,6 @@ public class MemberController {
 		System.out.println("MemberController.save");
 		System.out.println("userDto = " + userDto);
 		userService.save(userDto);
-		
 		return "login";
 	}
 	
@@ -70,6 +71,12 @@ public class MemberController {
 		}
 	}
 	
+	@PostMapping("/member/id-check")
+	public @ResponseBody String idcheck(@RequestParam("userID") String userID) {
+		System.out.println("userID = " + userID);
+		String checkResult = userService.idcheck(userID);
+		return checkResult;
+		
 	
-
+}
 }

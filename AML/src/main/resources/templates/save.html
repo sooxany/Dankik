@@ -1,19 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>login</title>
+<title>save</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/save.css">
     <!--<script src="login.js" defer></script>-->
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+  		integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  		crossorigin="anonymous">
+    </script>
+    
 </head>
 
 <body>
     <!--/memeber/login 으로 post요청을 보낼 폼을 정의함-->
-    <form action="/member/login" method="post">
+    <form action="/member/save" method="post">
         <div class="menu" >
             <nav class="clearfix">
               <ul class="clearfix">
@@ -35,10 +40,11 @@
            </div>
            <div class="form-elements">
              <div class="form-arrow">
-                아이디: <input type="text" name="userID" placeholder="아이디를 입력하세요"><br>
+                아이디: <input type="text" name="userID" placeholder="아이디를 입력하세요" id="userID" onkeyup="idcheck()"><br>
+                <span id="check-result"></span> 
              </div>
              <div class="form-arrow">
-                비밀번호: <input type="password" name="userPassword" placeholder="비밀번호를 입력하세요"><br>
+                비밀번호: <input type="password" name="userPassword" placeholder="비밀번호를 입력하세요" ><br>
              </div>
              <div class="form-arrow">
                 <button type="submit" value="회원가입">회원가입</button>
@@ -47,7 +53,37 @@
          </div>
        </div>
      </div>
-    </div>
 </form>
 </body>
+<script th:inline="javascript">
+	const idcheck = () => {
+	  const ID = document.getElementById("userID").value;
+	  const checkResult = document.getElementById("check-result");
+	  console.log("입력값: ", ID);
+	  $.ajax({
+		 type: "post",
+	     url: "/member/id-check",
+	     data: {
+	    	 "userID" : ID
+	     },
+	     success: function(res) {
+	    	 console.log("요청성공", res);
+	    	 if (res == "Ok") {
+	    		 console.log("사용 가능한 아이디");
+	    		 checkResult.style.color="green";
+	    		 checkResult.innerHTML = "사용 가능한 아이디입니다.";
+	    	 } else {
+	    		 console.log("이미 사용 중인 아이디");
+	    		 checkResult.style.color="red";
+	    		 checkResult.innerHTML = "이미 사용 중인 아이디입니다.";
+	    	 }
+	    	  
+	     },
+	     error: function(err) {
+	    	 console.log("에러발생", err);
+	    	 
+	     }
+	  });
+	  }
+</script>
 </html>
