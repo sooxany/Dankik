@@ -63,9 +63,25 @@ public class MemberController {
 		return "home";
 	}
 	
-	@GetMapping("/member/gender")
-	public String genderForm() {
-		return "gender";
+	@GetMapping("/member/woongbi_gender")
+	public String woongbigenderForm() {
+		return "woongbi_gender";
+	}
+	
+	@GetMapping("/member/woongbi_selection")
+	public String woongbiselectionForm() {
+		return "woongbi_selection";
+	}
+	
+	@GetMapping("/member/woongbi_dry_reservation")
+	public String woongbidryreservationForm() {
+		return "woongbi_dry_reservation";
+	}
+	
+	
+	@GetMapping("/member/woongbi_wash_reservation")
+	public String woongbiwashreservationForm() {
+		return "woongbi_wash_reservation";
 	}
 	
 	@PostMapping("/member/login")

@@ -1,0 +1,124 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+
+.reservation-system {
+    font-family: 'NanumSquareNeo-Variable', monospace;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d5f2fc;
+}
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+button {
+    padding: 50px 100px;
+    margin-right: 10px;
+    background: linear-gradient(to right, #004080, #0066cc);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transform: scale(1);
+    text-decoration: none;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+button:hover {
+    background: linear-gradient(to right, #050148, #172697, #97c3ec);
+    transform: scale(1.1);
+}
+
+button:hover::before {
+    opacity: 1;
+}
+
+button.selected {
+    background: linear-gradient(to right, #050148, #172697, #97c3ec);
+}
+
+button.selected::before {
+    opacity: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #536edd;
+  }
+  
+  li{
+    display: inline-block;
+  }
+  .menu {
+    width: 5000px;
+    height: 90px;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    /*background-color: #ffffff;color: white;*/
+    position: absolute;z-index: 1;
+  }
+
+  .menu a{
+    color: #ffffff;
+    padding: 14.5px 16px;
+    text-decoration: none;
+  }
+  
+  .menu a:hover{
+    color: #FFD400;
+    font-weight:normal;
+  }
+  
+  span li{
+    font-size: 20pt;
+    color: #ffffff;
+    padding: 14.5px 16px;
+    /*text-shadow: -1px 0px #FFFFFF, 0px 1px #FFFFFF, 1px 0px #FFFFFF, 0px -1px #FFFFFF;*/
+  }
+  
+  ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #536edd;
+  }
+  
+  li{
+    display: inline-block;
+  }
