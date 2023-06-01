@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/selection.css">
+    <title>selection</title>
+</head>
+<body>
+    <div class="intro">
+        <div class="menu">
+            <nav class="clearfix">
+                <ul class="clearfix">
+                    <li style="float: left;"><br>
+                        &nbsp;<img src="/img/logo1.png" width="80px" height="80px">
+                    </li>
+                    <br><br>
+                    <span style="text-shadow: -1px 0 #000000, 0 1px #24199c, 1px 0 #24199c, 0 -1px #24199c;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li class="one" style="text-align: center;"><a href="member/main">메인페이지로 돌아가기</a></li>
+                    </span>
+                    <li class="two" style="float: right;"><a href="/member/logout" style="font-size: 20px;">로그아웃&nbsp;</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="reservation-system">
+        <a href="/member/jib_wash"><button class="selected">세탁기 예약</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/member/jib_dry"><button class="selected">건조기 예약</button></a>
+    </div>
+</body>
+</html>

@@ -84,6 +84,45 @@ public class MemberController {
 		return "woongbi_wash_reservation";
 	}
 	
+	@GetMapping("/member/jib_dry")
+	public String jibdryForm() {
+		return "jib_dry";
+	}
+	
+	@GetMapping("/member/jib_gender")
+	public String jibgenderForm() {
+		return "jib_gender";
+	}
+	
+	@GetMapping("/member/jib_selection")
+	public String jibselectionForm() {
+		return "jib_selection";
+	}
+	
+	@GetMapping("/member/jib_wash")
+	public String jibwashForm() {
+		return "jib_wash";
+	}
+	
+	@GetMapping("/member/jin_wash")
+	public String jinwashForm() {
+		return "jin_wash";
+	}
+	
+	@GetMapping("/member/jin_dry")
+	public String jindryForm() {
+		return "jin_dry";
+	}
+	
+	@GetMapping("/member/jin_gender")
+	public String jingenderForm() {
+		return "jin_gender";
+	}
+	
+	@GetMapping("/member/jin_selection")
+	public String jinselectionForm() {
+		return "jin_selection";
+	}
 	@PostMapping("/member/login")
 	public String login(@ModelAttribute UserDto userDto, HttpSession session) {
 		UserDto loginResult = userService.login(userDto);

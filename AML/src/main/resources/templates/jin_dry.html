@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
     <head>
         <meta charset="utf-8">
-        <title>woonbi_wash_reservation</title>
+        <title>jin_dry</title>
         <link rel="stylesheet" href="/css/reservation.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +32,7 @@
         <br>
         <br>
         <br>
-        <h3> 세탁기 예약 시스템 - 웅비홀</h3>
+        <h3> 건조기 예약 시스템 - 진리관 </h3>
         <br>
         <form method="get">
             <fieldset>
@@ -40,6 +41,11 @@
                 <input type="date" name="reservation_date"/>
                 <br>
                 <br>
+                <button type="button">01:00</button>
+                <button type="button">02:00</button>
+                <button type="button">03:00</button>
+                <button type="button">04:00</button>
+                <button type="button">05:00</button>
                 <button type="button">06:00</button>
                 <button type="button">07:00</button>
                 <button type="button">08:00</button>
@@ -57,20 +63,18 @@
                 <button type="button">20:00</button>
                 <button type="button">21:00</button>
                 <button type="button">22:00</button>
+                <button type="button">23:00</button>
+                <button type="button">24:00</button>
                 <br>
                 <br>
                 <br>
-                <label for="choice"> 세탁기 선택: </label>
-                <input type="radio" name="op" id="choice" value="wash1"/>세탁기 1
-                <input type="radio" name="op" id="choice" value="wash2"/>세탁기 2
-                <input type="radio" name="op" id="choice" value="wash3"/>세탁기 3
-                <input type="radio" name="op" id="choice" value="wash1"/>세탁기 4
-                <input type="radio" name="op" id="choice" value="wash2"/>세탁기 5
-                <input type="radio" name="op" id="choice" value="wash3"/>세탁기 6
-                <input type="radio" name="op" id="choice" value="wash1"/>세탁기 7
-                <input type="radio" name="op" id="choice" value="wash2"/>세탁기 8
-                <input type="radio" name="op" id="choice" value="wash3"/>세탁기 9
-                <br>
+                <label for="choice"> 건조기 선택: </label>
+                <input type="radio" name="op" id="choice" value="dry1"/>건조기 1
+                <input type="radio" name="op" id="choice" value="dry2"/>건조기 2
+                <input type="radio" name="op" id="choice" value="dry3"/>건조기 3
+                <input type="radio" name="op" id="choice" value="dry3"/>건조기 4
+                <input type="radio" name="op" id="choice" value="dry3"/>건조기 5
+                <input type="radio" name="op" id="choice" value="dry3"/>건조기 6
             </fieldset>
             <br>
             <br>
