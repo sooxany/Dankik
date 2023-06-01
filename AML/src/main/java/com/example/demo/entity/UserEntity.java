@@ -17,7 +17,7 @@ import jakarta.persistence.Table;
 @Entity
 @Setter
 @Getter
-@Table(name = "new_user")
+@Table(name = "real_new_user")
 public class UserEntity {
 	// 아래 형식과 같은 column 만들어줌
 	@Id // pk 지정
@@ -26,14 +26,21 @@ public class UserEntity {
 	
 	@Column(unique = true) // unique 제약 조건 추가
 	private String userID;
-	
 	@Column
 	private String userPassword;
+	
+	private String userName;
+	
+	private String userPhonenumber;
+
 	
 	public static UserEntity toUserEntity(UserDto userDto) {
 		UserEntity userEntity = new UserEntity();
 		userEntity.setUserID(userDto.getUserID());
 		userEntity.setUserPassword(userDto.getUserPassword());
+		userEntity.setUserName(userDto.getUserName());
+		userEntity.setUserPhonenumber(userDto.getUserPhonenumber());
+		
 		return userEntity;
 		
 	}

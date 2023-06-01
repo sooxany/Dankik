@@ -18,12 +18,16 @@ public class UserDto {
 	private Long id;
 	private String userID;
 	private String userPassword;
+	private String userName;
+	private String userPhonenumber;
 	
 	public static UserDto toUserDto(UserEntity userEntity) {
 		UserDto userDto = new UserDto();
 		userDto.setId(userEntity.getId());
 		userDto.setUserID(userEntity.getUserID());
 		userDto.setUserPassword(userEntity.getUserPassword());
+		userDto.setUserName(userEntity.getUserName());
+		userDto.setUserPhonenumber(userEntity.getUserPhonenumber());
 		return userDto;
 	}
 	

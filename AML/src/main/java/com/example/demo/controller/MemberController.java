@@ -52,9 +52,20 @@ public class MemberController {
 		return "login";
 	}
 	
+	@GetMapping("/member/logout")
+	public String logout(HttpSession session) {
+		session.invalidate();
+		return "home";
+	}
+	
 	@GetMapping("/member/home")
 	public String homeForm() {
 		return "home";
+	}
+	
+	@GetMapping("/member/gender")
+	public String genderForm() {
+		return "gender";
 	}
 	
 	@PostMapping("/member/login")

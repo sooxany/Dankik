@@ -3,9 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>save</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/save.css">
     <!--<script src="login.js" defer></script>-->
     <!-- jquery cdn -->
@@ -13,26 +10,33 @@
   		integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
   		crossorigin="anonymous">
     </script>
-    
 </head>
 
 <body>
     <!--/memeber/login 으로 post요청을 보낼 폼을 정의함-->
     <form action="/member/save" method="post">
-        <div class="menu" >
+      <div class="intro">
+        <div class="menu">
             <nav class="clearfix">
-              <ul class="clearfix">
-                <li><a href="#">세탁 예약 시스템</a></li>
-                <li><a href="/member/login">로그인</a></li>
-            </ul>
-            <a id="pull" href="#"></a>
-          </nav>
+                <ul class="clearfix">
+                    <li style="float: left;"><br>
+                        &nbsp;<img src="dankik_Logo.png" width="80px" height="80px">
+                    </li>
+                    <br>
+                    <br>
+                    <span style="text-shadow: -1px 0 #000000, 0 1px #24199c, 1px 0 #24199c, 0 -1px #24199c;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li class="one" style="text-align: center;"><a href="/member/home">메인페이지로 돌아가기</a></li>
+                    </span>
+                    <li class="two" style="float: right;"><a href="/member/login" style="font-size: 20px;">로그인&nbsp;</a></li>
+                </ul>
+            </nav>
         </div>
-        <br><br>
+    </div>
     <div class="window">
        <div class="logo-container">
          <img src="/img/logo1.png" alt="로고 이미지">
         </div>
+        <br>
        <div class="form-wrapper">
         <div class="form signUp">
            <div class="form-header">
@@ -40,12 +44,18 @@
            </div>
            <div class="form-elements">
              <div class="form-arrow">
-                아이디: <input type="text" name="userID" placeholder="아이디를 입력하세요" id="userID" onkeyup="idcheck()"><br>
-                <span id="check-result"></span> 
+               아이디: <input type="text" name="userID" placeholder="아이디를 입력하세요"  id="userID" onkeyup="idcheck()"><br>
+               <span id="check-result"></span> 
              </div>
              <div class="form-arrow">
-                비밀번호: <input type="password" name="userPassword" placeholder="비밀번호를 입력하세요" ><br>
+              비밀번호: <input type="password" name="userPassword"  placeholder="비밀번호를 입력하세요"><br>
              </div>
+             <div class="form-arrow">
+              핸드폰번호: <input type="phonenumber" placeholder="핸드폰 번호를 입력하세요"><br>
+           </div>
+           <div class="form-arrow">
+             이름: <input type="name" placeholder="이름을 입력하세요"><br>
+         </div>
              <div class="form-arrow">
                 <button type="submit" value="회원가입">회원가입</button>
              </div>
@@ -53,6 +63,7 @@
          </div>
        </div>
      </div>
+    </div>
 </form>
 </body>
 <script th:inline="javascript">

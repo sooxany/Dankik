@@ -1,72 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
     <head>
+        <meta charset="utf-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/css/home.css">
+        <title>Dankik</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var links = document.querySelectorAll('.amount a');
+                links.forEach(function(link) {
+                    link.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        alert('로그인 후 이용바랍니다.');
+                    });
+                });
+            });
+        </script>
     </head>
     <body>
-       <div class="wrap">
+        <div class="wrap">
             <div class="intro">
-                <div class="menu" >
+                <div class="menu">
                     <nav class="clearfix">
-                      <ul class="clearfix">
-                      <li class = "one">
-                        <img src="/img/logo1.png" width="100px" height="100px"></li>
-           
-                        <li><a href="/member/reserve">세탁 예약 시스템</a></li>
-                        <li><a href="/member/save">회원가입</a></li>
-                        <li><a href="/member/login">로그인</a></li>
-                        
-                    </ul>
-                    <a id="pull" href="#"></a>
-                  </nav>
+                        <ul class="clearfix">
+                            <li style="float: left;">
+                                <br>
+                                &nbsp;<img src="/img/logo1.png" width="80px" height="80px">
+                            </li>
+                            <br>
+                            <br>
+                            <span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li class="one" style="text-align: center;">세탁 예약 시스템</li>
+                            </span>
+                            <li class="two" style="float: right;"><a href="/member/save" style="font-size: 20px;">회원가입&nbsp;</a></li>
+                            <li class="three" style="float: right;"><a href="/member/login" style="font-size: 20px;">로그인</a></li>
+                        </ul>
+                    </nav>
                 </div>
-              
-                <!--<div class="header">
-                    <ul class="nav">
-                        <li><a href="#">세탁 예약 시스템</a></li>
-                        <li><a href="#">회원가입</a></li>
-                        <li><a href="#">로그인</a></li>-->
-                    </ul>
-                </div>
-                <div class="logo">
-                    <img src="/img/logo1.png" width="400px" height="400px" margin="1000px">
-                </div>
+            </div>
                 <div class="intro_text">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <h1>Dankik</h1>
                     <h4 class="contents1">안녕하세요! 단국대학교 죽전캠퍼스 기숙사생들을 위한 세탁 예약 홈페이지입니다.</h4>
-                </div>
-        </div>   
-            <!--intro end-->
-
+                </div>   
+        
             <ul class="amount">
                 <li><div>
                     <br>
                     <br>
                     <a href="#">집현재</a><br>
                     <br>
-                    <a href="#"><img src="https://domi.dankook.ac.kr/images/Khostel/templates/B0001/sub/1_0301.gif" width="400px" height="400px" margin="100px"></a><br>
+                    <a href="#"><img src="https://domi.dankook.ac.kr/images/Khostel/templates/B0001/sub/1_0301.gif" width="280px" height="280px" margin="100px"></a><br>
                 </div></li>
                 <li><div>
                     <br>
                     <br>
                     <a href="#">웅비홀</a><br>
                     <br>
-                    <a href="#"><img src="https://domi.dankook.ac.kr/images/Khostel/templates/B0002/sub/2_0301.gif" width="400px" height="400px" margin="100px"></a><br>
+                    <a href="#"><img src="https://domi.dankook.ac.kr/images/Khostel/templates/B0002/sub/2_0301.gif" width="280px" height="280px" margin="100px"></a><br>
                 </div></li>
                 <li><div>
                     <br>
                     <br>
                     <a href="#">진리관</a><br>
                     <br>
-                    <a href="#"><img src="https://domi.dankook.ac.kr/images/Khostel/templates/B0006/sub/0103/3_0301.jpg" width="400px" height="400px" margin="100px"></a><br>
+                    <a href="#"><img src="https://domi.dankook.ac.kr/images/Khostel/templates/B0006/sub/0103/3_0301.jpg" width="280px" height="280px" margin="100px"></a><br>
                     <br>
                 </div></li>
-            </ul>
-          
-            <!--amount end-->
-
-
-        </body>
+            </ul>          
+        </div>
+    </body>
+</html>
