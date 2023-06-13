@@ -65,6 +65,11 @@ li{
     display: inline-block;
 }
 
+.wrap {
+  min-height: 100vh;
+  background-color: #d5f2fc;
+}
+
 .menu a{
     color: #FFFFFF; 
     padding: 14.5px 16px;
@@ -124,6 +129,7 @@ h1{
 }
 
 .wrap {
+	height: 100vh;
     background-color: #d5f2fc;
   }
 
@@ -145,6 +151,7 @@ h1{
 
 .amount > li {
     flex: 1;
+    width: 33.33%;
     height: 409px;
     background: #f4f4f3;
 }

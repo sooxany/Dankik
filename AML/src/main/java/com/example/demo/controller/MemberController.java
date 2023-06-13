@@ -47,6 +47,14 @@ public class MemberController {
 		return "login";
 	}
 	
+	@PostMapping("/member/woongbi_wash_reservation")
+	public String woongbiwashreservationForm(@ModelAttribute UserDto userDto) {
+		System.out.println("MemberController.save");
+		System.out.println("userDto = " + userDto);
+		userService.save(userDto);
+		return "main";
+	}
+	
 	@GetMapping("/member/login")
 	public String loginForm() {
 		return "login";

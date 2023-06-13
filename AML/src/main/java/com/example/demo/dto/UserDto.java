@@ -21,6 +21,9 @@ public class UserDto {
 	private String userName;
 	private String userPhonenumber;
 	
+  
+
+	
 	public static UserDto toUserDto(UserEntity userEntity) {
 		UserDto userDto = new UserDto();
 		userDto.setId(userEntity.getId());
@@ -28,6 +31,7 @@ public class UserDto {
 		userDto.setUserPassword(userEntity.getUserPassword());
 		userDto.setUserName(userEntity.getUserName());
 		userDto.setUserPhonenumber(userEntity.getUserPhonenumber());
+		
 		return userDto;
 	}
 	
